@@ -1,5 +1,8 @@
 {
 	"name": "react1",
+	"private": true,
+	"license": "MIT",
+	"author": "Ryan Suhartanto <suhartanto@kekkon.nexus>",
 	"repository": "ryansuhartanto/koda-b8-react1",
 	"type": "module",
 	"imports": {
