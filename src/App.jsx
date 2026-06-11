@@ -20,10 +20,10 @@ function InputNumber({ min = 0, max = 10 }) {
 	}
 
 	return (
-		<div className="flex flex-row items-stretch font-mono outline-1 outline-gray-300 bg-gray-50 rounded-xl overflow-hidden *:p-2 [&>button]:w-[2.5em] [&>button]:cursor-pointer">
+		<div className="flex flex-row items-stretch font-mono outline-1 outline-gray-300 bg-gray-50 rounded-xl overflow-hidden *:p-2 [&>button]:w-[2.5em] [&>button]:cursor-pointer [&>button]:disabled:cursor-not-allowed">
 			<button
 				type="button"
-				className="hover:bg-gray-300 disabled:bg-gray-400"
+				className="transition-colors hover:bg-gray-200 active:bg-gray-300 disabled:bg-gray-400"
 				onClick={() => handleValue(value - 1)}
 				disabled={!canDec}
 			>
@@ -40,7 +40,7 @@ function InputNumber({ min = 0, max = 10 }) {
 			/>
 			<button
 				type="button"
-				className="hover:bg-gray-300 disabled:bg-gray-400"
+				className="transition-colors hover:bg-gray-200 active:bg-gray-300 disabled:bg-gray-400"
 				onClick={() => handleValue(value + 1)}
 				disabled={!canInc}
 			>
