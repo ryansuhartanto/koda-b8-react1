@@ -12,7 +12,7 @@ function InputNumber({ min = 0, max = 10 }) {
 	 * @param {number} v
 	 */
 	function handleValue(v) {
-		const clamped = Math.max(0, Math.min(10, v));
+		const clamped = Math.max(0, Math.min(10, Number.isNaN(v) ? 0 : v));
 
 		setValue(clamped);
 		setCanDec(clamped > min);
