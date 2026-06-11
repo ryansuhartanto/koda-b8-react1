@@ -1,8 +1,11 @@
 import oxfmt from "@kekkon-nexus/config/oxfmt";
 import oxlint from "@kekkon-nexus/config/oxlint";
+import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
+	plugins: [react()],
+
 	fmt: {
 		...oxfmt,
 	},

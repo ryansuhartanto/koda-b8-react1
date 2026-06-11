@@ -10,8 +10,13 @@
 		"dev": "vp dev",
 		"build": "vp build"
 	},
+	"dependencies": {
+		"react": "^19.2.7",
+		"react-dom": "^19.2.7"
+	},
 	"devDependencies": {
 		"@kekkon-nexus/config": "^2.260520.0",
+		"@vitejs/plugin-react": "^6.0.2",
 		"commitlint": "^21.0.2",
 		"vite-plus": "latest"
 	}
